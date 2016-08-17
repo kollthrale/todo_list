@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20160816214122) do
   create_table "lists", force: :cascade do |t|
     t.string   "item"
     t.boolean  "complete"
+    t.string   "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

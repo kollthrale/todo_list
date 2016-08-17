@@ -1,0 +1,12 @@
+<h2>Make a new List Item</h2>
+<%= form_for @list do |f| %> 
+ <%= f.label :item %>
+ <%= f.text_field :item %> 
+ <%= f.check_box :complete %>
+ <%= f.label :complete %>
+ <%= f.label :body %>
+ <%= f.text_field :body %>
+ <%= f.submit %>
+<% end %> 
+
+
